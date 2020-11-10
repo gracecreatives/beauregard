@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;  
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F0F0;
+}
+
+body,
+header,
+section,
+article,
+footer,
+p,
+h1,
+h2,
+{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-size: 20px;
+  color: #666;
+  line-height: 1.7;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body > header,
+body > footer {
+  background: #fff;
+  color: #666;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 0;
+}
+
+.main-header {
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px 5%;
+  background-color: #F4F0F0;
+  border-bottom: 1px solid rgb(45,45,45, 0.1);
+}
+
+.main-header h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+footer {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 3%;
+  color: #F36B2D;
+  background-color: #F4F0F0;
+}
+
+footer a h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer {
+  display: block;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F4F0F0;
+  border-top: 1px solid rgb(45,45,45, 0.1);
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.content {
+  flex: 1 0 auto;
+  margin: 0 auto;
+  padding: 30px 30px;
+}
+
+#wrapper {
+  margin: 0 auto;
+  padding: 20px 20px 60px 20px;
+}
+
+.bg-img {
+  background-image: url("../intro-to-computer-programming.png"); 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  margin: 0;
+  box-shadow: inset 0 0 0 50vw rgba(244, 240, 240,0.9);
+}
+
+.logo img {
+    margin: 0;
+    cursor: pointer;
+    width: 20%;
+}
+
+.ftr-logo img {
+    width: 20%;    
+}
+
+.fa-facebook {
+    color: #F36B2D;
+}
+
+.ftr-logo {
+  justify-content: center;
+  align-items: center;    
+  text-align: center;
+}
+  
+.social {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;}
+
+.social h2 {
+  font-size: 22px;
+  padding: 0;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: flex-end;
+  justify-content: center;
+  align-items: center;
+  color: #545454;
+  font-size: 16px;
+  font-weight: 400;
+  clear: both;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.copyright:hover {  
+  cursor: pointer;
+}
+
+.fa {
+  color: #F36B2D;
+  padding: 5px;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.fa:hover {
+  color: #666;
+  opacity: 0.8;  
+}
+
+aside {
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 2em;
+}
+textarea {
+  width: 100%;
+}
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+.is-center {
+  text-align: center;
+}
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #666;
+}
+.button-xlarge {
+  font-size: 125%;
+}
+button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#name, #email {
+  width: 50%;
+}
+
+.honeypot-field {
+  display: none;
+}
+
+.heading {
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  font-size: 16px;
+  }
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #181829;
+  line-height: 1.4em;
+  text-shadow: ;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #666;
+}
+
+/*Scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  display: auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #F36B2D; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F36B2D; 
+  opacity: 0.5;
+}
+
+
+
+
+@media (max-width: 800px) {
+.bg-img {
+    background-image: url("../intro-to-computer-programming.png"); 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: inset 0 0 0 50vw rgba(244, 240, 240,0.9);
+  }
+
+.logo img {
+    width: 60%
+  }
+
+footer, .footer, .copyright, .fa, .ftr-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.social {
+  display: inline-block;
+}
+
+.copyright {
+    margin-top: 15px;
+  }
+
+.copyright p {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+.form-control, .pure-group #firstName,.pure-group #lastName,
+.pure-group #email, .pure-group #country, .pure-group #occupation, 
+.pure-group #exp_level, .pure-group #channel {
+  width: 100%;
+  }
+
+  .home-btn {
+    display: block;
+  }
+}
+
+.thankyou_message h2{
+  font-size: 22px;
+  text-align: center;
+  opacity: 0.9;
+  margin: 0 auto;
+}
+
+.thankyou_message {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+::placeholder {
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.home-btn a {
+  font-size: 16px;
+  padding: 10px;
+  font-weight: bold;
+  font-family: inherit;
+  color: #F36B2D;
+  text-decoration: none;  
+}
+
+.home-btn a:hover {
+  opacity: 0.8;
+}
+
