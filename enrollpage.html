@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Enrollment Program | Beauregard Tech</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <a href="/"><img src="images/beauregard-tech-logo.png" alt="Beauregard Technical Academy Logo"></a>
+    </div>
+  </header>
+  <div class="heading">
+    <h1 class="content-head is-center">COURSE: INTRODUCTION TO COMPUTER PROGRAMMING</h1>
+    <aside>
+      <p>Please use the <b><em>Contact Form</em></b> to enroll for this course.</p>
+    </aside>
+  </div>
+  <div class="bg-img">
+    <section id="wrapper" class="content">
+
+      <div class="container">
+        <form class="gform pure-form pure-form-stacked" method="POST"
+          action="https://script.google.com/macros/s/AKfycbwfmzgYFXEuD79PXH-CIVXG2fBx7H5o06Pe7yNiNw/exec">
+
+          <div class="form-elements">
+            <fieldset class="pure-group">
+              <label for="firstName">First Name: </label>
+              <input id="firstName" name="firstName" placeholder="Input your first name" required />
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="lastName">Last Name: </label>
+              <input id="lastName" name="lastName" placeholder="Input your last name" required />
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="email">Best Email Address:</label>
+              <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com"
+                required />
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="country">Country</label>
+              <input id="country" name="country" placeholder="What country are you from" required />
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="timezone">Timezone</label>
+              <select class="form-control" id="timezone" name="timezone">
+              </select>
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="message">Expectation: </label>
+              <textarea id="message" name="message" rows="10"
+                placeholder="Tell us what's your expectation you hope to get from the course..."></textarea>
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="occupation">Current Job: </label>
+              <input id="occupation" name="occupation" placeholder="What's your current job?" />
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="exp_level">How much experience/knowledge do you have about computer programming?</label>
+              <input id="exp_level" list="exp" name="exp_level" placeholder="Please Select">
+              <datalist id="exp">
+                <option selected>I know absolutely nothing</option>
+                <option>I have studied it a tiny bit</option>
+                <option>I can already write basic programs in one language</option>
+                <option>I can write basic programs in two or more languages</option>
+                <option>I can write complicated programs in many languages</option>
+              </datalist>
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="channel">Where did you hear about us?</label>
+              <input list="channels" name="channel" id="channel" placeholder="Please Select">
+              <datalist id="channels">
+                <option selected>Facebook</option>
+                <option>Google Search</option>
+                <option>Friends</option>
+                <option>Email</option>
+              </datalist>
+            </fieldset>
+
+            <fieldset class="pure-group honeypot-field">
+              <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be
+                empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+              <input id="honeypot" type="text" name="honeypot" value="" />
+            </fieldset>
+
+            <button class="button-success pure-button button-xlarge">
+              <i class="fa fa-paper-plane"></i>&nbsp;Submit</button>
+          </div>
+
+          <div class="thankyou_message" style="display: none;">
+            <div>
+              <h2><em>Thanks</em> for contacting us!
+                We will get back to you shortly!</h2>
+            </div>
+            <div class="home-btn"><a href="ad-landing_page.html">Back to Home</a></div>
+          </div>
+
+        </form>
+
+
+        <!-- Submit the Form to Google Using "AJAX" -->
+        <script data-cfasync="false" src="js/form-submission-handler.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="js/timezone/dist/timezones.full.js"></script>
+        <script>$('select').timezones(); </script>
+
+      </div>
+
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="ftr-top">
+      <div class="ftr-logo" id="ftr-left">
+        <a href="/"><img src="images/beauregard-tech-logo.png" alt="Beauregard Technical Academy Logo"></a>
+      </div>
+      <div class="social" id="ftr-right">
+        <h2>Contact Us</h2>
+        <a href="https://www.facebook.com/beauregardtech" class="fa fa-facebook"></a>
+        <a href="mailto:beauregard.technical.academy@gmail.com" class="fa fa-envelope"></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p id="ftr-left">Copyright 2020| Beauregard Technical Academy</p>
+    </div>
+  </footer>
+</body>
+
+</html>
