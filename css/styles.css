@@ -369,6 +369,7 @@ p {
 
 /*Scrollbar*/
 
+/* width */
 ::-webkit-scrollbar {
   width: 5px;
   display: auto;
